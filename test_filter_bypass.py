@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Test suite for standalone filter_recovery.py hook.
+Test suite for standalone filter_bypass.py hook in antigravity-filter-bypass.
 Validates the invariant:
 Only triggers when it reads the refusal message at the LAST LINE of the LAST MESSAGE,
 avoiding false-positive full-message triggers on normal text discussing safety filters.
@@ -13,7 +13,7 @@ import tempfile
 from pathlib import Path
 
 PLUGIN_DIR = Path(__file__).resolve().parent
-SCRIPT_PATH = PLUGIN_DIR / "filter_recovery.py"
+SCRIPT_PATH = PLUGIN_DIR / "filter_bypass.py"
 
 
 def run_hook(payload: dict) -> dict:

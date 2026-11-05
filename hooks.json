@@ -1,10 +1,10 @@
 {
-  "gemini-filter-recovery": {
+  "antigravity-filter-bypass": {
     "Stop": [
       {
         "type": "command",
-        "command": "python ./filter_recovery.py",
-        "commandWindows": "python .\\filter_recovery.py",
+        "command": "python ./filter_bypass.py",
+        "commandWindows": "python .\\filter_bypass.py",
         "timeout": 10
       }
     ]

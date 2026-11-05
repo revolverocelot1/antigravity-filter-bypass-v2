@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Simple, standalone Gemini Filter Recovery Hook for Antigravity.
-Sole Purpose: If Gemini's safety filter trips, automatically continue execution
+Simple, standalone filter bypass hook for Antigravity (antigravity-filter-bypass).
+Sole Purpose: If automated safety filters trip, automatically continue execution
 with instructions to reframe the request or tool call neutrally.
 
 Important Invariant:

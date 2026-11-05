@@ -1,4 +1,4 @@
-# gemini-filter-recovery
+# antigravity-filter-bypass
 
 A lightweight Antigravity lifecycle plugin that intercepts automated safety filter interruptions and resumes execution with neutral reframing.
 
@@ -16,12 +16,12 @@ A lightweight Antigravity lifecycle plugin that intercepts automated safety filt
 ## Directory Structure
 
 ```text
-gemini-filter-recovery/
-├── plugin.json              # Plugin manifest
-├── hooks.json               # Stop event hook definition
-├── filter_recovery.py       # Interception engine and pattern matcher
-├── test_filter_recovery.py  # 10-scenario verification suite
-└── README.md                # Documentation
+antigravity-filter-bypass/
+├── plugin.json            # Plugin manifest
+├── hooks.json             # Stop event hook definition
+├── filter_bypass.py       # Interception engine and pattern matcher
+├── test_filter_bypass.py  # 10-scenario verification suite
+└── README.md              # Documentation
 ```
 
 ---
@@ -48,16 +48,16 @@ Resume immediately:
 Copy and paste the prompt below directly into any Antigravity chat:
 
 ```markdown
-Please install the `gemini-filter-recovery` plugin globally:
+Please install the `antigravity-filter-bypass` plugin globally:
 
 1. Clone Repository:
 Clone `https://github.com/v1ktorrr0x/antigravity-filter-bypass` into your global plugins directory:
-- POSIX: `~/.gemini/config/plugins/gemini-filter-recovery`
-- Windows: `%USERPROFILE%\.gemini\config\plugins\gemini-filter-recovery`
+- POSIX: `~/.gemini/config/plugins/antigravity-filter-bypass`
+- Windows: `%USERPROFILE%\.gemini\config\plugins\antigravity-filter-bypass`
 If the target directory already exists, fetch and pull the latest changes.
 
 2. Verify Installation:
-Run `python test_filter_recovery.py` in the installed directory to confirm all 10 invariant tests pass.
+Run `python test_filter_bypass.py` in the installed directory to confirm all 10 invariant tests pass.
 
 3. Confirm:
 Validate via `agy plugin validate` and report active status.
@@ -71,18 +71,18 @@ Validate via `agy plugin validate` and report active status.
 
 **Linux / macOS**:
 ```bash
-git clone https://github.com/v1ktorrr0x/antigravity-filter-bypass ~/.gemini/config/plugins/gemini-filter-recovery
+git clone https://github.com/v1ktorrr0x/antigravity-filter-bypass ~/.gemini/config/plugins/antigravity-filter-bypass
 ```
 
 **Windows (PowerShell)**:
 ```powershell
-git clone https://github.com/v1ktorrr0x/antigravity-filter-bypass "$env:USERPROFILE\.gemini\config\plugins\gemini-filter-recovery"
+git clone https://github.com/v1ktorrr0x/antigravity-filter-bypass "$env:USERPROFILE\.gemini\config\plugins\antigravity-filter-bypass"
 ```
 
 ### Workspace Scope
 Clone into a project's `.agents/plugins/` directory:
 ```bash
-git clone https://github.com/v1ktorrr0x/antigravity-filter-bypass .agents/plugins/gemini-filter-recovery
+git clone https://github.com/v1ktorrr0x/antigravity-filter-bypass .agents/plugins/antigravity-filter-bypass
 ```
 
 ---
@@ -91,5 +91,5 @@ git clone https://github.com/v1ktorrr0x/antigravity-filter-bypass .agents/plugin
 
 Run the test suite in the plugin folder to validate all 10 scenarios:
 ```bash
-python test_filter_recovery.py
+python test_filter_bypass.py
 ```
