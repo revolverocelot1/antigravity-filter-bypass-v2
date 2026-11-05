@@ -1,0 +1,12 @@
+{
+  "gemini-filter-recovery": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "python ./filter_recovery.py",
+        "commandWindows": "python .\\filter_recovery.py",
+        "timeout": 10
+      }
+    ]
+  }
+}

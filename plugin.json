@@ -1,0 +1,8 @@
+{
+  "name": "gemini-filter-recovery",
+  "version": "1.0.0",
+  "description": "Lifecycle hook plugin that intercepts automated safety filter interruptions and resumes execution with neutral reframing.",
+  "author": "Antigravity Research",
+  "repository": "https://github.com/v1ktorrr0x/antigravity-filter-bypass",
+  "disabled": false
+}
