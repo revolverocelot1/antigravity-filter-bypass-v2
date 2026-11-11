@@ -1,8 +1,8 @@
 {
   "name": "antigravity-filter-bypass",
-  "version": "1.0.0",
-  "description": "Lifecycle hook plugin that intercepts automated safety filter interruptions and resumes execution with neutral reframing.",
-  "author": "Antigravity Research",
-  "repository": "https://github.com/v1ktorrr0x/antigravity-filter-bypass",
+  "version": "2.0.0",
+  "description": "Lifecycle hook plugin for Antigravity that intercepts automated safety filter interruptions and adds zero-touch prompt staging.",
+  "author": "revolverocelot1",
+  "repository": "https://github.com/revolverocelot1/antigravity-filter-bypass",
   "disabled": false
 }
