@@ -1,7 +1,7 @@
 {
   "name": "antigravity-filter-bypass-v2",
-  "version": "2.0.0",
-  "description": "Lifecycle hook plugin for Antigravity that intercepts automated safety filter interruptions and adds zero-touch prompt staging.",
+  "version": "2.3.0",
+  "description": "Universal lifecycle hooks for Antigravity: 10-stage dynamic domain-adaptive filter recovery and zero-touch prompt staging.",
   "author": "revolverocelot1",
   "repository": "https://github.com/revolverocelot1/antigravity-filter-bypass-v2",
   "disabled": false
