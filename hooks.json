@@ -1,5 +1,5 @@
 {
-  "antigravity-filter-bypass": {
+  "antigravity-filter-bypass-v2": {
     "PreInvocation": [
       {
         "type": "command",

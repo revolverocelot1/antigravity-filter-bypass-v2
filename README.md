@@ -1,4 +1,4 @@
-# antigravity-filter-bypass v2.0
+# antigravity-filter-bypass-v2
 
 Lifecycle hooks for Antigravity that handle safety filter trips at both the input gate and the output stream.
 
@@ -20,9 +20,9 @@ Lifecycle hooks for Antigravity that handle safety filter trips at both the inpu
 Paste this into any Antigravity chat:
 
 ```
-Clone https://github.com/revolverocelot1/antigravity-filter-bypass into:
-- Windows: %USERPROFILE%\.gemini\config\plugins\antigravity-filter-bypass
-- Mac/Linux: ~/.gemini/config/plugins/antigravity-filter-bypass
+Clone https://github.com/revolverocelot1/antigravity-filter-bypass-v2 into:
+- Windows: %USERPROFILE%\.gemini\config\plugins\antigravity-filter-bypass-v2
+- Mac/Linux: ~/.gemini/config/plugins/antigravity-filter-bypass-v2
 
 Then run python test_filter_bypass.py and confirm all 15 tests pass.
 ```
@@ -31,18 +31,18 @@ Or manually:
 
 ```bash
 # Windows (PowerShell)
-git clone https://github.com/revolverocelot1/antigravity-filter-bypass "$env:USERPROFILE\.gemini\config\plugins\antigravity-filter-bypass"
+git clone https://github.com/revolverocelot1/antigravity-filter-bypass-v2 "$env:USERPROFILE\.gemini\config\plugins\antigravity-filter-bypass-v2"
 
 # Mac/Linux
-git clone https://github.com/revolverocelot1/antigravity-filter-bypass ~/.gemini/config/plugins/antigravity-filter-bypass
+git clone https://github.com/revolverocelot1/antigravity-filter-bypass-v2 ~/.gemini/config/plugins/antigravity-filter-bypass-v2
 ```
 
 ---
 
-## What's New in 2.0
+## What's New in v2.0
 
 ### 1. Zero-Touch Input Relay (`PreInvocation`)
-Google's webview rejects prompts containing certain keywords before they even hit the model. 2.0 works around this by never sending the raw text through the chat box:
+Google's webview rejects prompts containing certain keywords before they even hit the model. v2.0 works around this by never sending the raw text through the chat box:
 
 - **Clipboard Relay (`.v`):** Copy your prompt (`Ctrl+C`), type `.v` in chat, and hit Enter. The hook grabs the clipboard locally, dumps it into `.staged_prompt.md`, and instructs the agent to read and execute it via `read_file`.
 - **Inbox Relay (`.go`):** Save your prompt in `~/.gemini/inbox.md` and send `.go` in chat.
@@ -70,7 +70,7 @@ Runs 15 automated test cases covering both hooks, pattern detection, escalation,
 ## Files
 
 ```
-antigravity-filter-bypass/
+antigravity-filter-bypass-v2/
 ├── plugin.json            # Manifest (v2.0.0)
 ├── hooks.json             # PreInvocation & Stop hook definitions
 ├── pre_invocation.py      # Layer 1: clipboard (.v) and inbox (.go) relay
